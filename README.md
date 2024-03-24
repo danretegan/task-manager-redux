@@ -16,6 +16,6 @@ Se creează un magazin Redux (`store`) care combină reducerii și definește st
 
 Componentele React sunt conectate la magazinul Redux (`store`) pentru a accesa starea aplicației și pentru a trimite (dispatch) acțiuni către magazin atunci când este necesar.
 
-### Concluzie:
+## Concluzie:
 
-    În această schemă, `acțiunile` sunt trimise la `store` folosind funcția `dispatch`, iar `starea` aplicației este accesată folosind hook-ul `useSelector`. Aceasta este o modalitate simplificată de a descrie modul în care `Redux` poate fi utilizat într-o aplicație `React` pentru a gestiona starea și funcționalitatea aplicației.
+În această schemă, `acțiunile` sunt trimise la `store` folosind funcția `dispatch`, iar `starea` aplicației este accesată folosind hook-ul `useSelector`. Aceasta este o modalitate simplificată de a descrie modul în care `Redux` poate fi utilizat într-o aplicație `React` pentru a gestiona starea și funcționalitatea aplicației.
