@@ -1,8 +1,21 @@
-# React + Vite
+# React Redux:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 1. Definirea acțiunilor:
 
-Currently, two official plugins are available:
+Se definesc acțiunile pe care le poate face aplicația. Acestea sunt `obiecte JavaScript` care descriu evenimentele care au loc în aplicație. De obicei, sunt definite ca `constante` pentru a le face ușor de referit și de gestionat.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 2. Crearea reducerilor:
+
+Se creează `reduceri` care sunt `funcții pure` care preiau `starea` curentă și o `acțiune` și returnează o nouă stare în funcție de acțiunea primită. Aceste `functii reducer` sunt responsabile pentru actualizarea stării aplicației în funcție de acțiunile care au loc.
+
+## 3. Crearea store-ului Redux:
+
+Se creează un magazin Redux (`store`) care combină reducerii și definește starea inițială a aplicației. Acesta este responsabil pentru gestionarea întregii stări a aplicației și distribuirea acțiunilor către reduceri pentru a actualiza starea.
+
+## 4. Conectarea componentelor React la store:
+
+Componentele React sunt conectate la magazinul Redux (`store`) pentru a accesa starea aplicației și pentru a trimite (dispatch) acțiuni către magazin atunci când este necesar.
+
+### Concluzie:
+
+    În această schemă, `acțiunile` sunt trimise la `store` folosind funcția `dispatch`, iar `starea` aplicației este accesată folosind hook-ul `useSelector`. Aceasta este o modalitate simplificată de a descrie modul în care `Redux` poate fi utilizat într-o aplicație `React` pentru a gestiona starea și funcționalitatea aplicației.
